@@ -1,30 +1,35 @@
 .work {
-  padding-top: 0px;
-  &__title {
-    margin-bottom: 50px;
-  }
-  &__list {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__item {
-    position: relative;
-  }
-  &__text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 70px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: rgba(47, 48, 58, 0.8);
-    color: var(--additional-color);
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 0px;
+    &__title {
+      margin-bottom: 50px;
+    }
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__item {
+      position: relative;
+    }
+    &__text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 70px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      text-align: center;
+      text-transform: uppercase;
+      background-color: rgba(47, 48, 58, 0.8);
+      color: var(--additional-color);
+    }
   }
 }

@@ -1,7 +1,20 @@
 .advantages {
   &__list {
-    display: flex;
-    gap: 30px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    width: 450px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
   &__thumb {
     height: 120px;
@@ -13,12 +26,16 @@
     background: var(--button-color);
   }
   &__title {
+    text-align: center;
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--main-color);
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
   &__text {
     font-size: 14px;
