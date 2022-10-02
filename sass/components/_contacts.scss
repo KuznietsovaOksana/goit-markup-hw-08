@@ -1,0 +1,25 @@
+.contact {
+  &__list {
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
+  }
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    padding: 32px 0px 32px;
+    transition: color 250ms var(--timing-function);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    &:hover,
+    &:focus {
+      color: var(--brand-color);
+    }
+  }
+  &__icon {
+    margin-right: 10px;
+  }
+}

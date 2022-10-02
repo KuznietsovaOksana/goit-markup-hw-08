@@ -1,0 +1,28 @@
+.advantages {
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__thumb {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background: var(--button-color);
+  }
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--main-color);
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--text-color);
+  }
+}

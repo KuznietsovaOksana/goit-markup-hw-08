@@ -1,0 +1,13 @@
+.page-header {
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    color: var(--header-logo-color);
+  }
+}

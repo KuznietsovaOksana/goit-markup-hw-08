@@ -1,0 +1,29 @@
+.clients {
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__item {
+    width: 170px;
+    height: 92px;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    transition: fill 250ms var(--timing-function), border 250ms var(--timing-function);
+    border: 1px solid var(--social-link-color);
+    fill: var(--social-link-color);
+    &:hover,
+    &:focus {
+      fill: var(--brand-color);
+      border: 1px solid var(--brand-color);
+    }
+  }
+}
