@@ -3,6 +3,9 @@
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  // @media screen and (max-width: 767px) {
+  //   margin-bottom: 300px;
+  // }
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -54,7 +57,20 @@
   display: none;
   @media screen and (max-width: 767px) {
     display: flex;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--brand-color);
   }
-  &__item {
+}
+.network__link:visited {
+  color: inherit;
+}
+.network__item {
+  padding-right: 10px;
+  padding-left: 10px;
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
