@@ -1,5 +1,8 @@
 .filter-button {
-  padding: 6px 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
   border-radius: 4px;
   border: 1px solid transparent;
   transition-property: box-shadow, color, background-color;
@@ -20,10 +23,10 @@
     background: var(--brand-color);
   }
   &--active {
+    padding-left: 25px;
+    padding-right: 25px;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
-    font-weight: 500;
-    line-height: 1.62;
     color: var(--additional-color);
     background-color: var(--brand-color);
   }

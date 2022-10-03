@@ -10,11 +10,27 @@
 }
 .footer {
   &__container {
-    display: flex;
-    align-items: baseline;
+    display: block;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1200px) {
+      align-items: baseline;
+      text-align: left;
+    }
   }
   &__address {
-    margin-right: 70px;
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      margin-right: 165px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+      margin-bottom: 0;
+    }
   }
 }
 .address {
@@ -24,7 +40,7 @@
     line-height: 1.5;
   }
   &__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
   &__map {
     color: var(--additional-color);
@@ -44,7 +60,11 @@
   }
 }
 .footer-social {
-  margin-right: 93px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    margin-bottom: 0;
+  }
   &__text {
     margin-bottom: 20px;
     font-weight: 700;
@@ -52,11 +72,18 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--additional-color);
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
   &__list {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
+    @media screen and (min-width: 1200px) {
+      justify-content: start;
+    }
   }
   &__link {
     width: 44px;
@@ -86,10 +113,10 @@
   }
 }
 .signup {
-  &__label {
-  }
   &__input {
-    width: 358px;
+    margin-bottom: 20px;
+    width: 450px;
+    height: 50px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
@@ -100,6 +127,13 @@
     border-radius: 4px;
     color: rgba(255, 255, 255, 0.6);
     background-color: transparent;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: block;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin-bottom: 0;
+    }
   }
   &__icon {
     margin-left: 10px;

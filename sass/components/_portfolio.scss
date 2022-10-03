@@ -7,9 +7,18 @@
   }
   &__item {
     background: #ffffff;
+    width: 450px;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+    }
   }
   &__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     transition: box-shadow 250ms var(--timing-function);
     & .portfolio__description {
       transform: translateY(100%);
@@ -36,7 +45,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 63px 24px;
+    padding: 77px 24px;
     overflow: hidden;
     opacity: 0;
     font-size: 18px;
@@ -44,12 +53,19 @@
     color: var(--additional-color);
     background: rgba(33, 150, 243, 0.9);
     transition: opacity 250ms var(--timing-function), transform 250ms var(--timing-function);
+    @media screen and (min-width: 768px) {
+      padding: 49px 24px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 63px 24px;
+    }
   }
   &__card {
     border-left: 1px solid var(--line-color);
     border-right: 1px solid var(--line-color);
     border-bottom: 1px solid var(--line-color);
     padding: 20px 24px;
+    flex-grow: 1;
   }
   &__title {
     margin-bottom: 4px;
@@ -67,8 +83,14 @@
 .filter {
   &__list {
     display: flex;
-    justify-content: center;
     gap: 8px;
-    margin-bottom: 50px;
+    row-gap: 15px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+      margin-bottom: 50px;
+    }
   }
 }

@@ -3,43 +3,62 @@
   top: 0;
   left: 0;
   z-index: 1;
+  padding: 93px 15px;
   opacity: 1;
   transition: opacity 250ms var(--timing-function);
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
     & .modal {
-      transform: translate(-50%, -50%) scale(0.9);
+      transform: scale(0.9);
+      @media screen and (min-width: 768px) {
+        transform: translate(-50%, -50%) scale(0.9);
+      }
     }
   }
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 450px;
+  width: 100%;
+  transform: scale(1);
   transition: transform 250ms var(--timing-function), opacity 250ms var(--timing-function);
   padding: 40px;
-  min-height: 581px;
-  min-width: 528px;
   background: var(--additional-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   opacity: 1;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    @media screen and (min-width: 1200px) {
+      max-width: 528px;
+      width: 100%;
+      min-height: 581px;
+    }
+  }
   &__title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     color: var(--main-color);
+    @media screen and (min-width: 1200px) {
+      line-height: 1.15;
+    }
   }
   &__form {
-    width: 448px;
+    width: 100%;
     margin-top: 12px;
   }
   &__button {
@@ -163,10 +182,16 @@
     border-color: var(--brand-color);
   }
   &__text {
-    margin-left: 10px;
-    font-size: 14px;
-    line-height: 1.71;
+    margin-left: 24px;
+    font-size: 12px;
+    line-height: 1.17;
     color: var(--text-color);
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 0;
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
   &__link {
     position: relative;
