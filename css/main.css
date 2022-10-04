@@ -225,7 +225,11 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .network__list {
+    position: absolute;
+    bottom: 0;
+    left: -10px;
     display: flex;
+    flex-wrap: wrap;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
@@ -246,6 +250,13 @@ ul {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+@media screen and (max-width: 767px) {
+  .contacts {
+    position: absolute;
+    bottom: 48px;
+    left: 40px;
+  }
+}
 .contacts.item {
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -283,10 +294,17 @@ ul {
 }
 .contact__item .contact__link--blue {
   color: var(--brand-color);
+  margin-bottom: 32px;
 }
 @media screen and (min-width: 768px) {
   .contact__item .contact__link--blue {
     color: var(--text-color);
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact__item .contact__link--grey {
+    font-size: 24px;
   }
 }
 .contact__link {
