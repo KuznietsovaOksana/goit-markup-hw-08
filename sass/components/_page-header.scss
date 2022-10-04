@@ -24,5 +24,6 @@
   }
 }
 .page-header {
-  position: relative;
+  position: sticky;
+  overflow-x: clip;
 }
