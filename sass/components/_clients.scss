@@ -12,8 +12,7 @@
     flex-wrap: wrap;
   }
   &__item {
-    width: 210px;
-    height: 92px;
+    width: calc(100% - 15px);
 
     @media screen and (min-width: 768px) {
       width: 226px;

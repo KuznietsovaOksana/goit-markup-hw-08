@@ -903,8 +903,7 @@ ul {
   flex-wrap: wrap;
 }
 .clients__item {
-  width: 210px;
-  height: 92px;
+  width: calc(100% - 15px);
 }
 @media screen and (min-width: 768px) {
   .clients__item {
