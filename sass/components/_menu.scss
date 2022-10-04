@@ -29,9 +29,9 @@
   background-color: var(--additional-color);
 
   @media screen and (max-width: 767px) {
-    transform: translateX(0);
+    transform: translateX(100%);
     transition: transform 250ms var(--timing-function);
-    display: none;
+    // display: none;
     position: absolute;
     top: 0;
     left: 0;
