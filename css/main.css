@@ -163,6 +163,7 @@ ul {
   top: 0;
   z-index: 999;
   overflow-x: clip;
+  background-color: var(--additional-color);
 }
 
 .nav {
@@ -709,9 +710,6 @@ ul {
     margin-bottom: 30px;
   }
 }
-.advantages__item {
-  width: 450px;
-}
 @media screen and (min-width: 768px) {
   .advantages__item {
     width: 354px;
@@ -1172,7 +1170,8 @@ ul {
 
 .signup__input {
   margin-bottom: 20px;
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   height: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
