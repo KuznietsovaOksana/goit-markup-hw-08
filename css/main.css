@@ -1212,6 +1212,7 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .signup__input {
     display: block;
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
