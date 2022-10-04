@@ -277,6 +277,14 @@ ul {
     margin-bottom: 8px;
   }
 }
+.contact__item .contact__link--blue {
+  color: var(--brand-color);
+}
+@media screen and (min-width: 768px) {
+  .contact__item .contact__link--blue {
+    color: var(--text-color);
+  }
+}
 .contact__link {
   display: inline-flex;
   align-items: center;
@@ -311,6 +319,7 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .icon-mail {
+    display: inline-block;
     width: 14px;
     height: 10px;
   }
@@ -327,6 +336,7 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .icon-tel {
+    display: inline-block;
     width: 10px;
     height: 14px;
   }

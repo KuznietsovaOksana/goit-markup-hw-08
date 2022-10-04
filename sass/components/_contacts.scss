@@ -32,6 +32,12 @@
         margin-bottom: 8px;
       }
     }
+    & .contact__link--blue {
+      color: var(--brand-color);
+      @media screen and (min-width: 768px) {
+        color: var(--text-color);
+      }
+    }
   }
 
   &__link {
@@ -65,6 +71,7 @@
 .icon-mail {
   display: none;
   @media screen and (min-width: 768px) {
+    display: inline-block;
     width: 14px;
     height: 10px;
   }
@@ -76,6 +83,7 @@
 .icon-tel {
   display: none;
   @media screen and (min-width: 768px) {
+    display: inline-block;
     width: 10px;
     height: 14px;
   }
