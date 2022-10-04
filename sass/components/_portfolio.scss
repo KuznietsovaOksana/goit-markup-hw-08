@@ -7,9 +7,11 @@
   }
   &__item {
     background: #ffffff;
-    width: 450px;
+    max-width: 450px;
+    margin: 0 auto;
     @media screen and (min-width: 768px) {
       width: 354px;
+      margin: 0;
     }
     @media screen and (min-width: 1200px) {
       width: 370px;
