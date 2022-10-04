@@ -389,7 +389,7 @@ ul {
 @media screen and (max-width: 767px) {
   .menu__container {
     transform: translateX(0);
-    transition: transform 2500ms var(--timing-function);
+    transition: transform 250ms var(--timing-function);
     display: none;
     position: absolute;
     top: 0;
@@ -405,10 +405,6 @@ ul {
   .menu__container.is-open {
     display: block;
     width: 100vw;
-  }
-}
-@media screen and (max-width: 767px) and (max-width: 767px) {
-  .menu__container.is-open {
     transform: translateX(0);
   }
 }
