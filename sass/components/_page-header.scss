@@ -26,8 +26,7 @@
 .page-header {
   position: sticky;
   top: 0;
-  z-index: 999;
-  overflow-x: clip;
+  z-index: 2;
   background-color: var(--additional-color);
-  border: 1px solid #ececec;
+  border-bottom: 1px solid var(--line-color);
 }

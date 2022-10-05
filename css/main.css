@@ -161,10 +161,9 @@ ul {
 .page-header {
   position: sticky;
   top: 0;
-  z-index: 999;
-  overflow-x: clip;
+  z-index: 2;
   background-color: var(--additional-color);
-  border: 1px solid #ececec;
+  border-bottom: 1px solid var(--line-color);
 }
 
 .nav {
@@ -413,7 +412,7 @@ ul {
   .menu__container {
     transform: translateX(100%);
     transition: transform 250ms var(--timing-function);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -961,9 +960,6 @@ ul {
   border: 1px solid var(--brand-color);
 }
 
-.portfolio {
-  border-top: 1px solid var(--line-color);
-}
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
@@ -1116,12 +1112,12 @@ ul {
   .footer__container {
     display: flex;
     justify-content: center;
+    align-items: baseline;
     flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
-    align-items: baseline;
     text-align: left;
   }
 }
@@ -1238,6 +1234,9 @@ ul {
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
+}
+.signup__input:hover, .signup__input:focus {
+  outline: 1px solid var(--brand-color);
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .signup__input {
